@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/root/vm_disk_ctl/manage.py runserver 10.144.7.3:80

@@ -1,0 +1,504 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="shortcut icon" href="">  <!-- remove error message: "Not Found: /favicon.ico" -->
+        <meta charset='utf-8'>        
+            <title> VSCS </title>
+        <link href={% static "css/style.css" %} rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div style="padding:25px 0 25px 0; font-size: 50px; font-weight: bold;">
+            <a href="http://10.144.7.3/vscs"> VMH01 - SSD control System </a>
+        </div>
+        <div class="select">
+            <button>VM list</button>
+        </div>
+        <div class="option">
+            <div class="abs">
+                <button value="vmlist"> VM list </button>
+                <button value="{{data0}}"> {{data0}} </button>
+                <button value="{{data1}}"> {{data1}} </button>
+                <button value="{{data2}}"> {{data2}} </button>
+                <button value="{{data3}}"> {{data3}} </button>
+                <button value="{{data4}}"> {{data4}} </button>
+                <button value="{{data5}}"> {{data5}} </button>
+                <button value="{{data6}}"> {{data6}} </button>
+                <button value="{{data7}}"> {{data7}} </button>
+                <button value="{{data8}}"> {{data8}} </button>
+                <button value="{{data9}}"> {{data9}} </button>
+                <button value="{{data10}}"> {{data10}} </button>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>vm_name</th>
+                <th>disk_path</th>
+                <th>disk_size</th>
+                <th>operation</th>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data2}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-12.com.accelstor.p710:lab0901-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open21" value="on"> <input type="button" id="disk_close21" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data2}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-12.com.accelstor.p710:lab0902-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open22" value="on"> <input type="button" id="disk_close22" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data2}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-12.com.accelstor.p710:lab0903-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open23" value="on"> <input type="button" id="disk_close23" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data2}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-12.com.accelstor.p710:lab0904-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open24" value="on"> <input type="button" id="disk_close24" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data2}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-12.com.accelstor.p710:lab0905-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open25" value="on"> <input type="button" id="disk_close25" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data2}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-12.com.accelstor.p710:lab0906-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open26" value="on"> <input type="button" id="disk_close26" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data2}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-12.com.accelstor.p710:lab0907-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open27" value="on"> <input type="button" id="disk_close27" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data2}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-12.com.accelstor.p710:lab0908-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open28" value="on"> <input type="button" id="disk_close28" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data3}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1301-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open31" value="on"> <input type="button" id="disk_close31" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data3}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1302-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open32" value="on"> <input type="button" id="disk_close32" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data3}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1303-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open33" value="on"> <input type="button" id="disk_close33" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data3}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1304-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open34" value="on"> <input type="button" id="disk_close34" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data3}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1305-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open35" value="on"> <input type="button" id="disk_close35" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data3}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1306-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open36" value="on"> <input type="button" id="disk_close36" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data3}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1307-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open37" value="on"> <input type="button" id="disk_close37" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data3}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1308-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open38" value="on"> <input type="button" id="disk_close38" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data4}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1401-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open41" value="on"> <input type="button" id="disk_close41" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data4}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1402-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open42" value="on"> <input type="button" id="disk_close42" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data4}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1403-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open43" value="on"> <input type="button" id="disk_close43" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data4}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1404-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open44" value="on"> <input type="button" id="disk_close44" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data4}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1405-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open45" value="on"> <input type="button" id="disk_close45" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data4}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1406-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open46" value="on"> <input type="button" id="disk_close46" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data4}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1407-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open47" value="on"> <input type="button" id="disk_close47" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data4}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1408-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open48" value="on"> <input type="button" id="disk_close48" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data5}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1501-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open51" value="on"> <input type="button" id="disk_close51" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data5}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1502-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open52" value="on"> <input type="button" id="disk_close52" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data5}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1503-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open53" value="on"> <input type="button" id="disk_close53" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data5}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1504-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open54" value="on"> <input type="button" id="disk_close54" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data5}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1505-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open55" value="on"> <input type="button" id="disk_close55" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data5}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1506-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open56" value="on"> <input type="button" id="disk_close56" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data5}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1507-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open57" value="on"> <input type="button" id="disk_close57" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data5}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1508-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open58" value="on"> <input type="button" id="disk_close58" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data6}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1601-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open61" value="on"> <input type="button" id="disk_close61" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data6}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1602-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open62" value="on"> <input type="button" id="disk_close62" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data6}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1603-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open63" value="on"> <input type="button" id="disk_close63" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data6}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1604-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open64" value="on"> <input type="button" id="disk_close64" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data6}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1605-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open65" value="on"> <input type="button" id="disk_close65" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data6}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1606-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open66" value="on"> <input type="button" id="disk_close66" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data6}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1607-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open67" value="on"> <input type="button" id="disk_close67" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data6}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1608-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open68" value="on"> <input type="button" id="disk_close68" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data7}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1701-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open71" value="on"> <input type="button" id="disk_close71" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data7}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1702-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open72" value="on"> <input type="button" id="disk_close72" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data7}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1703-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open73" value="on"> <input type="button" id="disk_close73" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data7}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1704-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open74" value="on"> <input type="button" id="disk_close74" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data7}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1705-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open75" value="on"> <input type="button" id="disk_close75" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data7}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1706-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open76" value="on"> <input type="button" id="disk_close76" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data7}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1707-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open77" value="on"> <input type="button" id="disk_close77" value="off"></td>
+            </tr>
+            <tr class="disk_info">
+                <td>{{data7}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1708-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open78" value="on"> <input type="button" id="disk_close78" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data8}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1801-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open81" value="on"> <input type="button" id="disk_close81" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data8}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1802-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open82" value="on"> <input type="button" id="disk_close82" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data8}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1803-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open83" value="on"> <input type="button" id="disk_close83" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data8}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1804-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open84" value="on"> <input type="button" id="disk_close84" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data8}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1805-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open85" value="on"> <input type="button" id="disk_close85" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data8}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1806-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open86" value="on"> <input type="button" id="disk_close86" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data8}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1807-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open87" value="on"> <input type="button" id="disk_close87" value="off"></td>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data8}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1808-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open88" value="on"> <input type="button" id="disk_close88" value="off"></td>
+            </tr>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data9}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-06.com.accelstor.p710:lab1901-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open91" value="on"> <input type="button" id="disk_close91" value="off"></td>
+            </tr>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data9}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab1902-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open92" value="on"> <input type="button" id="disk_close92" value="off"></td>
+            </tr>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data9}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab1903-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open93" value="on"> <input type="button" id="disk_close93" value="off"></td>
+            </tr>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data9}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab1904-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open94" value="on"> <input type="button" id="disk_close94" value="off"></td>
+            </tr>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data9}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab1905-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open95" value="on"> <input type="button" id="disk_close95" value="off"></td>
+            </tr>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data9}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab1906-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open96" value="on"> <input type="button" id="disk_close96" value="off"></td>
+            </tr>
+            </tr>
+                <tr class="disk_info">
+                <td>{{data9}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab1907-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open97" value="on"> <input type="button" id="disk_close97" value="off"></td>
+            </tr>
+                </tr>
+                <tr class="disk_info">
+                <td>{{data9}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab1908-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open98" value="on"> <input type="button" id="disk_close98" value="off"></td>
+            </tr>
+            </tr>
+                </tr>
+                <tr class="disk_info">
+                <td>{{data10}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab2301-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open101" value="on"> <input type="button" id="disk_close101" value="off"></td>
+            </tr>
+            </tr>
+                </tr>
+                <tr class="disk_info">
+                <td>{{data10}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab2302-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open102" value="on"> <input type="button" id="disk_close102" value="off"></td>
+            </tr>
+            </tr>
+                </tr>
+                <tr class="disk_info">
+                <td>{{data10}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab2303-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open103" value="on"> <input type="button" id="disk_close103" value="off"></td>
+            </tr>
+            </tr>
+                </tr>
+                <tr class="disk_info">
+                <td>{{data10}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-07.com.accelstor.p710:lab2304-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open104" value="on"> <input type="button" id="disk_close104" value="off"></td>
+            </tr>
+            </tr>
+                </tr>
+                <tr class="disk_info">
+                <td>{{data10}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-08.com.accelstor.p710:lab2305-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open105" value="on"> <input type="button" id="disk_close105" value="off"></td>
+            </tr>
+            </tr>
+                </tr>
+                <tr class="disk_info">
+                <td>{{data10}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-08.com.accelstor.p710:lab2306-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open106" value="on"> <input type="button" id="disk_close106" value="off"></td>
+            </tr>
+            </tr>
+                </tr>
+                <tr class="disk_info">
+                <td>{{data10}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-08.com.accelstor.p710:lab2307-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open107" value="on"> <input type="button" id="disk_close107" value="off"></td>
+            </tr>
+            </tr>
+                </tr>
+                <tr class="disk_info">
+                <td>{{data10}}</td>
+                <td>/dev/disk/by-path/ip-172.19.10.2:3260-iscsi-iqn.2017-08.com.accelstor.p710:lab2308-lun-0</td>
+                <td>64 GB</td>
+                <td><input type="button" id="disk_open108" value="on"> <input type="button" id="disk_close108" value="off"></td>
+            </tr>
+        </table>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">        
+
+        <script type="text/javascript" src="{% static "js/index.js" %}"></script>
+    </body>
+</html>

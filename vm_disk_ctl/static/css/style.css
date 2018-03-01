@@ -1,0 +1,87 @@
+body {
+	font-family: arial;
+	padding: 10px 0 0 50px;
+	background: #555;
+}
+
+a {
+	color: #5CC000;
+	text-decoration: none;
+}
+
+table {
+	background: white;
+	border-top: 1px solid #53AD00;
+	border-right: 1px solid #53AD00;
+	border-left: none;
+	margin-top: 10px;
+	border-bottom: none;
+	border-spacing: 0;
+	max-width: 1000px
+}
+
+table tr th {
+	background: #68B800;
+	font-weight: bold;
+	color: white;
+}
+
+table tr th, table tr td {
+	border-left: 1px solid #53AD00;
+	border-bottom: 1px solid #53AD00;
+	border-top: none;
+	border-right: none;
+	padding: 7px 10px;
+	font-size: 15px;
+	text-align: center
+}
+
+th, td {
+	vertical-align: top;
+	text-align: center;
+	line-height: 1.5
+}
+
+tr.disk_info {
+	display: none
+}
+
+.select button {
+	min-width: 125px;
+	background: white;
+	border: 1px solid #b3b3b3;
+	border-radius: 5px;
+	color: #333;
+	padding: 5px 5px 5px 5px;
+}
+
+button {
+	display: block;
+	background: green;
+	color: white;
+	border: 0;
+	font-size: 15px;
+	min-width: 100%;
+	padding: 1px 0px 1px 0px;
+}
+
+.option {
+	display: none;
+	position: relative;
+}
+
+.abs {
+	position: absolute;
+	background: green;
+	overflow-y: scroll;
+	height: 125px;
+	width: 125px;
+	border-radius: 5px;
+}
+
+input[type="button"] {
+	border-radius: 6px;
+	font-size: 15px;
+	background-color: white;
+	padding: 1px 5px 1px 5px;
+}
