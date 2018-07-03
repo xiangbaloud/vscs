@@ -42,8 +42,9 @@ $('#disk_open21').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -63,8 +64,9 @@ $('#disk_open22').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -84,8 +86,9 @@ $('#disk_open23').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -105,8 +108,9 @@ $('#disk_open24').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -126,8 +130,9 @@ $('#disk_open25').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -147,8 +152,9 @@ $('#disk_open26').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -168,8 +174,9 @@ $('#disk_open27').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -189,8 +196,9 @@ $('#disk_open28').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -209,8 +217,9 @@ $('#disk_close21').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -229,8 +238,9 @@ $('#disk_close22').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -249,8 +259,9 @@ $('#disk_close23').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -269,8 +280,9 @@ $('#disk_close24').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -289,8 +301,9 @@ $('#disk_close25').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -309,8 +322,9 @@ $('#disk_close26').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -329,8 +343,9 @@ $('#disk_close27').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -349,8 +364,9 @@ $('#disk_close28').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -370,8 +386,9 @@ $('#disk_open31').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -391,8 +408,9 @@ $('#disk_open32').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -412,8 +430,9 @@ $('#disk_open33').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -433,8 +452,9 @@ $('#disk_open34').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -454,8 +474,9 @@ $('#disk_open35').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -475,8 +496,9 @@ $('#disk_open36').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -496,8 +518,9 @@ $('#disk_open37').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -517,8 +540,9 @@ $('#disk_open38').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -537,8 +561,9 @@ $('#disk_close31').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -557,8 +582,9 @@ $('#disk_close32').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -577,8 +603,9 @@ $('#disk_close33').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -597,8 +624,9 @@ $('#disk_close34').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -617,8 +645,9 @@ $('#disk_close35').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -637,8 +666,9 @@ $('#disk_close36').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -657,8 +687,9 @@ $('#disk_close37').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -677,8 +708,9 @@ $('#disk_close38').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -698,8 +730,9 @@ $('#disk_open41').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -719,8 +752,9 @@ $('#disk_open42').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -740,8 +774,9 @@ $('#disk_open43').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -761,8 +796,9 @@ $('#disk_open44').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -782,8 +818,9 @@ $('#disk_open45').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -803,8 +840,9 @@ $('#disk_open46').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -824,8 +862,9 @@ $('#disk_open47').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -845,8 +884,9 @@ $('#disk_open48').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -865,8 +905,9 @@ $('#disk_close41').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -885,8 +926,9 @@ $('#disk_close42').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -905,8 +947,9 @@ $('#disk_close43').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -925,8 +968,9 @@ $('#disk_close44').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -945,8 +989,9 @@ $('#disk_close45').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -965,8 +1010,9 @@ $('#disk_close46').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -985,8 +1031,9 @@ $('#disk_close47').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1005,8 +1052,9 @@ $('#disk_close48').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1026,8 +1074,9 @@ $('#disk_open51').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1047,8 +1096,9 @@ $('#disk_open52').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1068,8 +1118,9 @@ $('#disk_open53').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1089,8 +1140,9 @@ $('#disk_open54').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1110,8 +1162,9 @@ $('#disk_open55').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1131,8 +1184,9 @@ $('#disk_open56').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1152,8 +1206,9 @@ $('#disk_open57').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1173,8 +1228,9 @@ $('#disk_open58').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1193,8 +1249,9 @@ $('#disk_close51').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1213,8 +1270,9 @@ $('#disk_close52').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1233,8 +1291,9 @@ $('#disk_close53').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1253,8 +1312,9 @@ $('#disk_close54').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1273,8 +1333,9 @@ $('#disk_close55').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1293,8 +1354,9 @@ $('#disk_close56').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1313,8 +1375,9 @@ $('#disk_close57').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1333,8 +1396,9 @@ $('#disk_close58').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1354,8 +1418,9 @@ $('#disk_open61').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1377,8 +1442,9 @@ $('#disk_open62').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1398,8 +1464,9 @@ $('#disk_open63').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1419,8 +1486,9 @@ $('#disk_open64').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1440,8 +1508,9 @@ $('#disk_open65').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1461,8 +1530,9 @@ $('#disk_open66').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1482,8 +1552,9 @@ $('#disk_open67').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1503,8 +1574,9 @@ $('#disk_open68').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1523,8 +1595,9 @@ $('#disk_close61').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1543,8 +1616,9 @@ $('#disk_close62').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1563,8 +1637,9 @@ $('#disk_close63').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1583,8 +1658,9 @@ $('#disk_close64').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1603,8 +1679,9 @@ $('#disk_close65').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1623,8 +1700,9 @@ $('#disk_close66').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1643,8 +1721,9 @@ $('#disk_close67').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1663,8 +1742,9 @@ $('#disk_close68').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1684,8 +1764,9 @@ $('#disk_open71').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1705,8 +1786,9 @@ $('#disk_open72').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1726,8 +1808,9 @@ $('#disk_open73').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1747,8 +1830,9 @@ $('#disk_open74').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1768,8 +1852,9 @@ $('#disk_open75').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1789,8 +1874,9 @@ $('#disk_open76').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1810,8 +1896,9 @@ $('#disk_open77').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1831,8 +1918,9 @@ $('#disk_open78').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1851,8 +1939,9 @@ $('#disk_close71').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1871,8 +1960,9 @@ $('#disk_close72').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1891,8 +1981,9 @@ $('#disk_close73').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1911,8 +2002,9 @@ $('#disk_close74').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1931,8 +2023,9 @@ $('#disk_close75').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1951,8 +2044,9 @@ $('#disk_close76').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1971,8 +2065,9 @@ $('#disk_close77').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -1991,8 +2086,9 @@ $('#disk_close78').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2012,8 +2108,9 @@ $('#disk_open81').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2033,8 +2130,9 @@ $('#disk_open82').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2054,8 +2152,9 @@ $('#disk_open83').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2075,8 +2174,9 @@ $('#disk_open84').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2096,8 +2196,9 @@ $('#disk_open85').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2117,8 +2218,9 @@ $('#disk_open86').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2138,8 +2240,9 @@ $('#disk_open87').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2159,8 +2262,9 @@ $('#disk_open88').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2179,8 +2283,9 @@ $('#disk_close81').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2199,8 +2304,9 @@ $('#disk_close82').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2219,8 +2325,9 @@ $('#disk_close83').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2239,8 +2346,9 @@ $('#disk_close84').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2259,8 +2367,9 @@ $('#disk_close85').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2279,8 +2388,9 @@ $('#disk_close86').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2299,8 +2409,9 @@ $('#disk_close87').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2319,8 +2430,9 @@ $('#disk_close88').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2340,8 +2452,9 @@ $('#disk_open91').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2361,8 +2474,9 @@ $('#disk_open92').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2382,8 +2496,9 @@ $('#disk_open93').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2403,8 +2518,9 @@ $('#disk_open94').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2424,8 +2540,9 @@ $('#disk_open95').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2445,8 +2562,9 @@ $('#disk_open96').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2466,8 +2584,9 @@ $('#disk_open97').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2487,8 +2606,9 @@ $('#disk_open98').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2507,8 +2627,9 @@ $('#disk_close91').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2527,8 +2648,9 @@ $('#disk_close92').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2547,8 +2669,9 @@ $('#disk_close93').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2567,8 +2690,9 @@ $('#disk_close94').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2587,8 +2711,9 @@ $('#disk_close95').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2607,8 +2732,9 @@ $('#disk_close96').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2627,8 +2753,9 @@ $('#disk_close97').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2647,8 +2774,9 @@ $('#disk_close98').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2668,8 +2796,9 @@ $('#disk_open101').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2689,8 +2818,9 @@ $('#disk_open102').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2710,8 +2840,9 @@ $('#disk_open103').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2731,8 +2862,9 @@ $('#disk_open104').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2752,8 +2884,9 @@ $('#disk_open105').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2773,8 +2906,9 @@ $('#disk_open106').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2794,8 +2928,9 @@ $('#disk_open107').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2815,8 +2950,9 @@ $('#disk_open108').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk attached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2835,8 +2971,9 @@ $('#disk_close101').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2855,8 +2992,9 @@ $('#disk_close102').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2875,8 +3013,9 @@ $('#disk_close103').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2895,8 +3034,9 @@ $('#disk_close104').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2915,8 +3055,9 @@ $('#disk_close105').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2935,8 +3076,9 @@ $('#disk_close106').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2955,8 +3097,9 @@ $('#disk_close107').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
@@ -2975,8 +3118,9 @@ $('#disk_close108').click(function(){
 		url: diskctl_url,
 		contentType: 'application/json',
 		data: JSON.stringify(op),
-		success: function(){
-			alert("Disk detached successfully");
+		dataType: 'json',
+		success: function(XMLHttpRequest){
+			alert(String(XMLHttpRequest.responseText));
 		},
 		error: function(XMLHttpRequest) {
 			alert(String(XMLHttpRequest.responseText));
