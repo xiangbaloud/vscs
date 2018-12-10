@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'disk_ctl'
+    'disk_ctl',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +71,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'vm_disk_ctl.wsgi.application'
 
+# redis
+redis_host = '10.144.7.3'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [(redis_host, 6379)],
+        },
+       "ROUTING": "vm_disk_ctl.routing.channel_routing",
+    },
+}
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
